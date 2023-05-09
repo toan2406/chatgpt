@@ -89,6 +89,12 @@ You can download the latest binary from the [release page](https://github.com/j1
 ### Install via go
 
 ```shell
+go build -i -o "$(go env GOPATH)/bin/chatgpt" cmd/main.go
+```
+
+### Install the upstream repo
+
+```shell
 go install github.com/j178/chatgpt@latest
 ```
 
