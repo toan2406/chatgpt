@@ -26,7 +26,7 @@ echo "Hello, world" | chatgpt -p translator | say
 
 | Key Combination | Description |
 |-----------------|-------------|
-| `ctrl+j`        | Switch between single-line and multi-line input modes |
+| `ctrl+z`        | Switch between single-line and multi-line input modes |
 | `enter`         | Submit text when in single-line mode |
 | `ctrl+h`        | Toggle help visibility |
 | `esc` or `ctrl+c` | Quit the application |
@@ -87,6 +87,12 @@ echo "Hello, world" | chatgpt -p translator | say
 You can download the latest binary from the [release page](https://github.com/j178/chatgpt/releases).
 
 ### Install via go
+
+```shell
+go build -i -o "$(go env GOPATH)/bin/chatgpt" cmd/main.go
+```
+
+### Install the upstream repo
 
 ```shell
 go install github.com/j178/chatgpt@latest

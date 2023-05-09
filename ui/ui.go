@@ -237,7 +237,7 @@ func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			if m.inputMode == InputModelSingleLine {
 				UseMultiLineInputMode(&m)
 				m.textarea.ShowLineNumbers = true
-				m.textarea.SetHeight(2)
+				m.textarea.SetHeight(5)
 				m.viewport.Height = m.height - m.textarea.Height() - lipgloss.Height(m.RenderFooter())
 			} else {
 				UseSingleLineInputMode(&m)

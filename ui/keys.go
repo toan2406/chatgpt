@@ -45,7 +45,7 @@ func (k keyMap) FullHelp() [][]key.Binding {
 
 func defaultKeyMap() keyMap {
 	return keyMap{
-		SwitchMultiline: key.NewBinding(key.WithKeys("ctrl+j"), key.WithHelp("ctrl+j", "multiline mode")),
+		SwitchMultiline: key.NewBinding(key.WithKeys("ctrl+z"), key.WithHelp("ctrl+z", "multiline mode")),
 		Submit:          key.NewBinding(key.WithKeys("enter"), key.WithHelp("enter", "submit")),
 		ShowHelp:        key.NewBinding(key.WithKeys("ctrl+h"), key.WithHelp("ctrl+h", "show help")),
 		HideHelp:        key.NewBinding(key.WithKeys("ctrl+h"), key.WithHelp("ctrl+h", "hide help")),
@@ -125,7 +125,7 @@ const (
 
 func UseSingleLineInputMode(m *Model) {
 	m.inputMode = InputModelSingleLine
-	m.keymap.SwitchMultiline = key.NewBinding(key.WithKeys("ctrl+j"), key.WithHelp("ctrl+j", "multiline mode"))
+	m.keymap.SwitchMultiline = key.NewBinding(key.WithKeys("ctrl+z"), key.WithHelp("ctrl+z", "multiline mode"))
 	m.keymap.Submit = key.NewBinding(key.WithKeys("enter"), key.WithHelp("enter", "submit"))
 	m.keymap.TextAreaKeys.InsertNewline = key.NewBinding(
 		key.WithKeys("ctrl+d"),
@@ -137,7 +137,7 @@ func UseSingleLineInputMode(m *Model) {
 
 func UseMultiLineInputMode(m *Model) {
 	m.inputMode = InputModelMultiLine
-	m.keymap.SwitchMultiline = key.NewBinding(key.WithKeys("ctrl+j"), key.WithHelp("ctrl+j", "single line mode"))
+	m.keymap.SwitchMultiline = key.NewBinding(key.WithKeys("ctrl+z"), key.WithHelp("ctrl+z", "single line mode"))
 	m.keymap.Submit = key.NewBinding(key.WithKeys("ctrl+d"), key.WithHelp("ctrl+d", "submit"))
 	m.keymap.TextAreaKeys.InsertNewline = key.NewBinding(
 		key.WithKeys("enter"),
