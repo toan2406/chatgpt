@@ -26,7 +26,7 @@ echo "Hello, world" | chatgpt -p translator | say
 
 | Key Combination | Description |
 |-----------------|-------------|
-| `ctrl+j`        | Switch between single-line and multi-line input modes |
+| `ctrl+z`        | Switch between single-line and multi-line input modes |
 | `enter`         | Submit text when in single-line mode |
 | `ctrl+h`        | Toggle help visibility |
 | `esc` or `ctrl+c` | Quit the application |
